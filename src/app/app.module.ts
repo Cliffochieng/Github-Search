@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RoutingComponent } from './routing/routing.component';
 import { HighlightDirective } from './highlight.directive';
+import { JoinDateCountPipe } from './join-date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoutingComponent,
-    HighlightDirective
+    HighlightDirective,
+    JoinDateCountPipe
   ],
   imports: [
     BrowserModule,
@@ -18,6 +20,6 @@ import { HighlightDirective } from './highlight.directive';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [HighlightDirective]
+  exports: [HighlightDirective, JoinDateCountPipe]
 })
 export class AppModule { }
