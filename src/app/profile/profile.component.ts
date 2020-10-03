@@ -9,6 +9,8 @@ import { GitSearchService } from '../git-search.service';
   
 })
 export class ProfileComponent implements OnInit {
+  profile:Profile;
+  username:string;
 
   constructor() { }
 
