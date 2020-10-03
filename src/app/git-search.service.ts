@@ -8,7 +8,10 @@ import { Repo } from './repo';
   providedIn: 'root'
 })
 export class GitSearchService {
-  repo: any;
+  private username:string;
+  profile:Profile;
+  repo: Repo;
+  
   repoRequest() {
     throw new Error("Method not implemented.");
   }
