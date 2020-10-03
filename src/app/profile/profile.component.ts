@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GitSearchService } from '../git-search.service';
 import { Profiler } from 'inspector';
+import { Profile } from '../profile-class/profile';
 
 @Component({
   selector: 'app-profile',
