@@ -7,6 +7,7 @@ import { RoutingComponent } from './routing/routing.component';
 import { HighlightDirective } from './highlight.directive';
 import { JoinDateCountPipe } from './join-date-count.pipe';
 import { RepoComponent } from './repo/repo.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RepoComponent } from './repo/repo.component';
     RoutingComponent,
     HighlightDirective,
     JoinDateCountPipe,
-    RepoComponent
+    RepoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
