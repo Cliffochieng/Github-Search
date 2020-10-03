@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { RoutingComponent } from './routing/routing.component';
+import { RoutingModule} from './routing/routing.module';
 import { HighlightDirective } from './highlight.directive';
 import { JoinDateCountPipe } from './join-date-count.pipe';
 import { RepoComponent } from './repo/repo.component';
@@ -14,7 +14,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 @NgModule({
   declarations: [
     AppComponent,
-    RoutingComponent,
+    RoutingModule,
     HighlightDirective,
     JoinDateCountPipe,
     RepoComponent,
@@ -24,7 +24,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
