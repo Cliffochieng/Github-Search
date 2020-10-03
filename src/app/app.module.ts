@@ -9,6 +9,7 @@ import { JoinDateCountPipe } from './join-date-count.pipe';
 import { RepoComponent } from './repo/repo.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProfileComponent } from './profile/profile.component';
     JoinDateCountPipe,
     RepoComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
