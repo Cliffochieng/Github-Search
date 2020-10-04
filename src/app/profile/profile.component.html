@@ -1,8 +1,7 @@
 <div class="container">
     <ul class="bar">
-      <li>Github-Search</li>
+      <li>Git-hub Search</li>
     </ul>
-    <ng-progress></ng-progress>
   
   <div class="form">
     <form (ngSubmit)='findProfile()' #searchForm='ngForm'>
@@ -31,7 +30,7 @@
               <label for="followers">Followers:{{profile.followers}}</label><br>
               <label for="following">Following:{{profile.following}}</label>
               <div class="label label-default">This account was created on {{profile.created_at}}</div>
-              <div class="label label-default">{{profile.createdDate|joinDateCount}} days ago</div>
+              <div class="label label-default">{{profile.created_at|joinDateCount}} days ago</div>
   
            </div>
          </div>

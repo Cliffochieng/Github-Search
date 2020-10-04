@@ -1,5 +1,5 @@
 .container{
-    /* background-image: url('/assets/artblue.jpg'); */
+    background-image: url('/assets/images.jpg');
     margin: 0;
     padding: 20%;
      position: absolute;
@@ -8,6 +8,7 @@
      transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    overflow: hidden;
   }
   .profile{
     width:250px;

@@ -1,16 +1,15 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
 import { GitSearchService } from './git-search.service';
 
 describe('GitSearchService', () => {
-  let service: GitSearchService;
-
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(GitSearchService);
+    TestBed.configureTestingModule({
+      providers: [GitSearchService]
+    });
   });
 
-  it('should be created', () => {
+  it('should be created', inject([GitSearchService], (service: GitSearchService) => {
     expect(service).toBeTruthy();
-  });
+  }));
 });

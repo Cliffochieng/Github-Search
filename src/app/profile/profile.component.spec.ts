@@ -1,25 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit } from '@angular/core';
+import { GitSearchService } from '../git-search.service';
+import { Profile } from '../profile-class/profile';
 
-import { ProfileComponent } from './profile.component';
 
-describe('ProfileComponent', () => {
-  let component: ProfileComponent;
-  let fixture: ComponentFixture<ProfileComponent>;
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  providers:[GitSearchService],
+  styleUrls: ['./profile.component.css']
+})
+export class ProfileComponent implements OnInit {
+  profile:Profile;
+  username:string;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ ProfileComponent ]
-    })
-    .compileComponents();
-  });
+  constructor(private GitSearchService:GitSearchService) {
+     }
+  findProfile(){
+  this.GitSearchService.updateProfile(this.username);
+  this.GitSearchService.profileRequest()
+  this.profile=this.GitSearchService.profile
+  }
+  ngOnInit() {}
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ProfileComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+}
