@@ -1,30 +1,32 @@
 .container{
-    background-image: url('/assets/images.jpg');
-    margin: 0;
     padding: 20%;
-     position: absolute;
+     position:fixed;
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color:goldenrod;
     overflow: hidden;
+    background-image: url(/assets/images.jpeg);
+    background-size: cover;
+    font-size: larger;
   }
   .profile{
     width:250px;
     margin-bottom: 10%;
     padding: 2.5%;
-    background-color: #4CAF50;
+    background-color:green;
     font-size: 20px;
-    color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color:goldenrod;
+    box-shadow:10px 10px 2px rgb(black);
   }
   .repo{
     width:250px;
     margin-bottom: 10%;
     padding: 2.5%;
-    background-color: #4CAF50;
+    background-color:green;
     font-size: 20px;
-    color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color:goldenrod;
+    box-shadow:10px 10px 2px rgb(black);
   }
+  

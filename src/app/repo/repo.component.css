@@ -1,14 +1,13 @@
 .home{
-    width:250px;
+    widght:250px;
     margin-left:40%;
     margin-top: 2%;
     height: auto;
     text-align: center;
     padding: 2%;
-    background-color: #4CAF50;
+    background-color:green;
     font-size: 20px;
-    color:white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color:goldenrod;
   }
   .bar{
     list-style-type: none;
@@ -16,15 +15,18 @@
       padding: 0;
       overflow: hidden;
       background-color: #333;
+      font-size: xx-large;
   }
   li{
     float: left;
     display: block;
-     color: white;
+     color:goldenrod;
      text-align: center;
      padding: 14px 16px;
      text-decoration: none;
   }
-  body{
-      overflow: hidden;
+  *{
+      margin-right: 6%;
+      margin-left: 6%;
   }
+  

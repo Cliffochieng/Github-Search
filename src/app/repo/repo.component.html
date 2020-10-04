@@ -1,6 +1,6 @@
 <div class="container">
     <ul class="bar">
-      <li>Git-hub Search</li>
+      <li>Github-Search</li>
     </ul>
     <form (ngSubmit)='findProfile()' #searchForm='ngForm'>
          <div class="form-group">
@@ -8,13 +8,11 @@
          </div>
        </form>
   <h2 appHighlight>Repository</h2>
-      <!-- <div class="row" *ngFor="let repo of Repos let i=index" > -->
         <p>Repo name:{{repo?.name}}</p>
         <p><a href="{{repo?.html_url}}" class="btn btn-sm btn-success pull-right">View this Repo</a></p>
         <p>Repo Description:{{repo?.description}}</p>
   
-  <!-- </div> -->
   </div>
   <div>
-   <button class="home"><a routerLink='/home' routerLinkActive='active'>GO Back Home</a></button>
+   <button class="home"><a routerLink='/home' routerLinkActive='active'>Back Home</a></button>
   </div>
