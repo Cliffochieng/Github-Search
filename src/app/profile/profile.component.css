@@ -9,10 +9,6 @@
     border-bottom: groove;
     padding-top: 50px;
   }
-  .panel{
-    border-radius: grey;
-
-  }
   .bar{
     list-style-type: none;
       margin: 0;
@@ -50,6 +46,11 @@
   *{
       margin-right:6% ;
       margin-left: 6%;
-      background-position: center;
+  }
+  .form-control{
+    width: 934px;
+    margin-left: 0px;
+    height: 30px;
+    box-shadow: 5px 5px 2px;
   }
   
